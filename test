@@ -1,0 +1,18 @@
+{
+  "slug": "Witch-Hat-Atlier",
+  "title": "Witch Hat Atlier",
+  "description": ":chatting:",
+  "author": "Kamome Shirahama",
+  "artist": "Kamome Shirahama",
+  "cover": "https://files.catbox.moe/b6ucbf.jpg",
+  "chapters": {
+    "80": {
+      "title": "Chapter 80",
+      "groups": {
+        "Hat bros": [
+"https://github.com/neiloweeen/Richeh/blob/96e3932077c18fc5446dcb33c3e5d8d0af10707a/Homura%20did%20nothing%20wroong.pdf"
+        ]
+      }
+    }
+  }
+}
