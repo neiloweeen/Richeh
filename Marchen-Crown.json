@@ -6,7 +6,8 @@
   "artist": "Azychika",
   "cover": "https://files.catbox.moe/dlqhas.png",
   "chapters": {
-    "0": {
+    "1": {
+      "volume": "1",
       "title": "Chapter 0-1",
       "groups": {
         "Mangaplus": [
@@ -78,4 +79,5 @@
       }
     }
   }
+}
 }
