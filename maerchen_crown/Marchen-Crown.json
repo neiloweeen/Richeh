@@ -1,7 +1,7 @@
 {
     "slug": "Marchen-Crown",
-    "title": "Märchen Crown",
-    "description": "Rapunzel is a young girl who lives atop a tall tower and knows nothing of the outside world. One day she meets a boy named Mikel, who climbs the tower, and their destiny to change the world begins to unfold! The creators of \"Oshi no Ko\" and \"Record of Ragnarok\" form an incredible team to bring you the ultimate love story!\n\nJoin the Märchen Crown Discord: https://discord.gg/marchencrown",
+    "title": "M\u00c3\u00a4rchen Crown",
+    "description": "Rapunzel is a young girl who lives atop a tall tower and knows nothing of the outside world. One day she meets a boy named Mikel, who climbs the tower, and their destiny to change the world begins to unfold! The creators of \"Oshi no Ko\" and \"Record of Ragnarok\" form an incredible team to bring you the ultimate love story!\n\nJoin the M\u00c3\u00a4rchen Crown Discord: https://discord.gg/marchencrown",
     "author": "Aka Akasaka",
     "artist": "Azychika",
     "cover": "https://files.catbox.moe/dlqhas.png",
@@ -226,6 +226,32 @@
                     "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch005/p016.png",
                     "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch005/p017.png",
                     "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch005/p018.png"
+                ]
+            }
+        },
+        "6": {
+            "volume": 1,
+            "title": "Chapter 6: Escape Journey",
+            "groups": {
+                "MangaPlus": [
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch006/p001.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch006/p002.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch006/p003.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch006/p004.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch006/p005.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch006/p006.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch006/p007.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch006/p008.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch006/p009.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch006/p010.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch006/p011.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch006/p012.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch006/p013.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch006/p014.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch006/p015.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch006/p016.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch006/p017.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch006/p018.png"
                 ]
             }
         }
