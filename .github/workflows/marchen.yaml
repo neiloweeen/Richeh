@@ -1,0 +1,40 @@
+name: run cron_update.py
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    # Likely release day hence more checks
+    - cron: '0,20,40 15-17 * * 2'
+    # Runs at midnight and noon on other days (Monday to Saturday)
+    - cron: '0 0,12 * * 1-6'
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      github_token: ${{ secrets.UPDATE_TOKEN }}
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Run cron_update.py
+      run: python cron_update.py
+    # - name: Commit and push if changes
+    #   run: |
+    #     git config --local user.name "GitHub Actions"
+    #     git config --local user.email "actions@github.com"
+    #     git add -A
+    #     git diff-index --quiet HEAD || (git commit -a -m "Automated update at $(date +'%Y-%m-%d %H:%M:%S')" --allow-empty)
+    # - name: push changes
+    #   uses: ad-m/github-push-action@v0.6.0
+    #   with:
+    #     github_token: ${{ secrets.UPDATE_TOKEN }}
+    #     branch: main
