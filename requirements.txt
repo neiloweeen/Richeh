@@ -1,0 +1,8 @@
+b2sdk==2.8.0 # Optional, for Backblaze B2 support
+ipdb==0.13.13 # Optional
+mloader
+pillow==11.1.0
+requests==2.32.3
+python-dotenv
+tqdm==4.67.1
+pygithub==2.6.1
