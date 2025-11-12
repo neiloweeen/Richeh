@@ -617,80 +617,28 @@
                 ]
             }
         },
-        "21": {
+        "24": {
             "volume": 1,
-            "title": "Chapter 21: The Witch",
+            "title": "Chapter 24: Warmth",
             "groups": {
                 "MangaPlus": [
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch021/p001.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch021/p002.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch021/p003.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch021/p004.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch021/p005.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch021/p006.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch021/p007.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch021/p008.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch021/p009.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch021/p010.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch021/p011.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch021/p012.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch021/p013.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch021/p014.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch021/p015.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch021/p016.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch021/p017.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch021/p018.png"
-                ]
-            }
-        },
-        "22": {
-            "volume": 1,
-            "title": "Chapter 22: The Thorny Crown",
-            "groups": {
-                "MangaPlus": [
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch022/p001.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch022/p002.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch022/p003.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch022/p004.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch022/p005.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch022/p006.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch022/p007.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch022/p008.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch022/p009.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch022/p010.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch022/p011.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch022/p012.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch022/p013.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch022/p014.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch022/p015.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch022/p016.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch022/p017.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch022/p018.png"
-                ]
-            }
-        },
-        "23": {
-            "volume": 1,
-            "title": "Chapter 23: Despair",
-            "groups": {
-                "MangaPlus": [
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch023/p001.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch023/p002.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch023/p003.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch023/p004.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch023/p005.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch023/p006.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch023/p007.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch023/p008.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch023/p009.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch023/p010.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch023/p011.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch023/p012.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch023/p013.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch023/p014.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch023/p015.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch023/p016.png",
-                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch023/p017.png"
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch024/p001.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch024/p002.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch024/p003.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch024/p004.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch024/p005.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch024/p006.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch024/p007.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch024/p008.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch024/p009.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch024/p010.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch024/p011.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch024/p012.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch024/p013.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch024/p014.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch024/p015.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch024/p016.png",
+                    "https://cubari.onk.moe/m%C3%A4rchen_crown/fullres/ch024/p017.png"
                 ]
             }
         }
