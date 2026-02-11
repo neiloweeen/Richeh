@@ -3,11 +3,10 @@ import os
 import json
 from dotenv import load_dotenv
 from common.mp_utils import CustoMLoader
-from common.gh_utils import GithubHandler
 from common.b2_utils import upload_to_bucket
 from tqdm import tqdm
 from urllib.parse import quote
-import subprocess
+from github import Github
 
 
 import re
@@ -75,20 +74,37 @@ def main():
             "MangaPlus": uploaded_pages
         }
     }
-    subprocess.run(["git", "pull"], check=True)
-    with open("maerchen_crown/Marchen-Crown.json", "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=4, ensure_ascii=False)
-    git_commands = [
-        ["git", "config", "--local", "user.name", "fenixer"],
-        ["git", "config", "--local", "user.email", "143337992+Fenixer@users.noreply.github.com"],
-        ["git", "add", "maerchen_crown/Marchen-Crown.json"],
-        ["git", "commit", "-m", f"Added Chapter {chapter_number}"],
-        ["git", "push"]
-    ]
-
-    from tqdm import trange
-    for command in git_commands:
-        subprocess.run(command, check=True)
+    # Get GitHub token from environment
+    github_token = os.getenv('GITHUB_ACCESS_TOKEN')
+    if not github_token:
+        raise ValueError("GITHUB_ACCESS_TOKEN not found in environment variables")
+    
+    # Get repository name from environment or use default
+    repo_name = os.getenv('GITHUB_REPO', 'neiloweeen/Richeh')
+    file_path = 'maerchen_crown/Marchen-Crown.json'
+    branch = 'main'
+    
+    # Initialize GitHub client
+    g = Github(github_token)
+    repo = g.get_repo(repo_name)
+    
+    # Get the current file from GitHub to get its SHA
+    print("Fetching current file from GitHub...")
+    github_file = repo.get_contents(file_path, ref=branch)
+    
+    # Prepare updated content
+    updated_content = json.dumps(data, indent=4, ensure_ascii=False)
+    
+    # Update the file on GitHub
+    print("Pushing changes to GitHub...")
+    repo.update_file(
+        path=github_file.path,
+        message=f"Added Chapter {chapter_number}",
+        content=updated_content,
+        sha=github_file.sha,
+        branch=branch
+    )
+    print("✓ Successfully pushed to GitHub!")
 
     time.sleep(3)
 
