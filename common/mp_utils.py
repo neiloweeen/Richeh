@@ -3,6 +3,60 @@ from mloader.exporter import RawExporter
 from functools import partial
 from itertools import count
 from tqdm.auto import tqdm
+from requests import Response
+from typing import Any
+import requests
+import time
+import uuid
+
+
+class CustomSession(requests.Session):
+    def __init__(
+        self,
+        max_retries: int = 3,
+        min_backoff: int = 4,
+        timeout: int = 10,
+    ) -> None:
+        super().__init__()
+        self.max_retries = max_retries
+        self.min_backoff = min_backoff
+        self.timeout = timeout
+        token = str(uuid.uuid1())
+        self.headers.update(
+            {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+                "Session-Token": token,
+            }
+        )
+
+    def request(self, method: str | bytes, url: str | bytes, **kwargs: Any) -> Response:  # pyright: ignore[reportIncompatibleMethodOverride]
+        kwargs.setdefault("timeout", self.timeout)
+        last_exception = None
+
+        for attempt in range(self.max_retries + 1):
+            try:
+                response = super().request(method, url, **kwargs)
+            except requests.RequestException as exc:
+                last_exception = exc
+                if attempt == self.max_retries:
+                    raise
+
+                time.sleep(max(4, self.min_backoff * (2**attempt)))
+                continue
+
+            if response.status_code != 429 and response.status_code < 500:
+                return response
+
+            if attempt == self.max_retries:
+                return response
+
+            response.close()
+            time.sleep(max(4, self.min_backoff * (2**attempt)))
+
+        if last_exception is not None:
+            raise last_exception
+        raise RuntimeError("unreachable")
+
 
 class CustoMLoader(MangaLoader):
     
@@ -11,6 +65,7 @@ class CustoMLoader(MangaLoader):
             RawExporter, destination="output", add_chapter_title=True, add_chapter_subdir=None
         )
         super().__init__(exporter)
+        self.session = CustomSession()        
         
     def get_latest_chapter(self, series_id: ...):
         title = self._get_title_details(series_id)

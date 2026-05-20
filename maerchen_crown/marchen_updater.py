@@ -127,7 +127,14 @@ def main():
         return
             
     discord_webhook_url = os.getenv('DISCORD_WEBHOOK_URL')
-    message = {"content": f"Added Chapter {chapter_number}. \nLink: {chapter_link}"}
+    ping_users = os.getenv('PING_USERS', '')
+    mentions = ' '.join(
+        f"<@{uid.strip()}>" for uid in ping_users.split(',') if uid.strip()
+    )
+    content = f"Added Chapter {chapter_number}. \nLink: {chapter_link}"
+    if mentions:
+        content = f"{mentions}\n{content}"
+    message = {"content": content}
     try:
         requests.post(discord_webhook_url, json=message)
     except Exception as e:
